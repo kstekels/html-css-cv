@@ -1,249 +1,66 @@
-/* Header */
-html {
-  font-size: 14px;
+* {
+    line-height: 2rem;
+    font-family: 'Merriweather', serif;
 }
 
 body {
-  padding: 0% 15%;
-  font-family: "Merriweather", serif;
-  font-size: 1rem;
-  /* position: absolute; */
+    padding: 16px 10%;
 }
 
-.seperator {
-  margin-top: 2rem;
+/* Main-section */
+#main-section {
+    padding-top: 16px;
+    border-radius: 16px;
 }
 
-header > img {
-  position: relative;
-  top: 40px;
-  float: right;
-  width: 260px;
-  height: 260px;
-  border-radius: 50%;
-  border: 4px solid white;
-}
-
-header h1 {
-  font-size: 4rem;
-  margin: 0px;
-}
-
-header h2 {
-  font-size: 2.5rem;
-  margin: 0px;
-  padding-bottom: 20px;
-  border-bottom: 2px solid;
-}
-
-header h3 {
-  font-size: 1.5rem;
-  margin: 0px;
-}
-
-#social-media {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-}
-
-#social-media p {
-  margin: 0px;
-  font-size: 2.5rem;
-  text-align: center;
-}
-
-header {
-  display: flex;
-  justify-content: space-around;
-  background-color: rgba(220, 220, 220, 0.8);
-  border-radius: 20px;
-}
-
-#name-title {
-  display: inline-block;
-}
-
-.links {
-  text-decoration: none;
-  color: black;
-}
-
-/* Section -> Profile description */
-
-#profile-description > h2 {
-  font-size: 2rem;
-}
-
-#profile-description > p {
-  font-size: 1.5rem;
-  line-height: 1.5;
-  text-align: justify;
-}
-
-/*  */
-#section-2 {
-  display: flex;
-  justify-content: stretch;
-}
-
-#skills {
-  flex: 1;
-}
-
-#skills p,
-#experience p {
-  font-size: 1.2rem;
-}
-
-#education p {
-  font-size: 1.3rem;
-}
-
-#education h3 {
-  font-size: 1.4rem;
-}
-
-#education > div {
-  border-left: 2px solid gray;
-  padding-left: 1rem;
-}
-
-#education > div > p,
-h3 {
-  margin: 0px;
-}
-
-#skills h2,
-#experience h2 {
-  font-size: 2rem;
-}
-
-#experience {
-  flex: 2;
-  display: flex;
-  padding-left: 20px;
-}
-
-#experience h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0px;
-}
-
-.woking-place {
-  flex: 1;
-}
-
-.woking-place p {
-  margin: 0px;
-}
-
-#projects {
-  flex: 2;
-}
-
-#projects span {
-  font-weight: bold;
-}
-
-#project-2 {
-  margin-top: 2rem;
-}
-
-#project-1 > div,
-#project-2 > div {
-  padding-left: 1rem;
-  border-left: 2px solid gray;
-}
-
-.tools {
-  color: gray;
-}
-
-footer {
-  color: gray;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-/* Certificates */
-#certificates {
-  text-align: center;
-}
-
-#certificates h2 {
-  font-size: 2rem;
-}
-
-#certificates > div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 30px;
-}
-
-#certificates > div p {
-  font-size: 1.2rem;
-  margin-top: 0px;
-}
-
-/*  */
-@media screen and (max-width: 900px) {
-  html {
-    font-size: 12px;
-  }
-
-  header {
-    display: block;
-    background-color: rgba(220, 220, 220, 0.8);
-    border-radius: 20px;
+#image {
+    display: flex;
     text-align: center;
-  }
+    align-items: center;
+}
 
-  #name-title {
-    padding-left: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
+#image div#left-card-karlis {
+    background: rgba(128, 128, 128, 0.05);
+    border-radius: 16px;
+}
 
-  header > img {
-    position: static;
-    float: none;
-    width: 140px;
-    height: 140px;
+#image h1 {
+    margin-bottom: 1rem;
+}
+
+#image h5 {
     margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#main-profile-picture {
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
-    border: 4px solid white;
-  }
+    border: 8px solid #fff;
+    /* border: 8px solid #7fa99875; */
+}
 
-  header h1 {
-    font-size: 2rem;
-    margin: 0px;
-  }
+#intro-text-content {
+    display: flex;
+    align-items: center;
+}
 
-  header h2 {
-    font-size: 1.5rem;
-    margin: 0px;
-    padding-bottom: 20px;
-    border-bottom: none;
-  }
+#intro-text {
+    text-align: justify;
+}
 
-  header h3 {
-    font-size: 1.2rem;
-    margin: 0px;
-  }
+/* Experience */
+#experience p {
+    margin-bottom: 0;
+}
 
-  #section-2 {
-    display: block;
-    justify-content: stretch;
-  }
+.timeline span {
+    font-weight: bold;
+}
 
-  #experience {
-    display: block;
-  }
-
-  .seperator {
-    display: none;
-    margin-top: 0px;
-  }
+/* Footer */
+footer {
+    color: gray;
+    text-align: center;
 }
